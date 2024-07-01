@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: serif;
+}
+
+body {
+    background-image: url(images/interiorbg1-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1030px;
+    width: 100vw;
+    background-color: #12120E;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.nav-logo {
+    height: 80px;
+    width: 160px;
+}
+
+.logo {
+    background-image: url(images/interior-designer-logo3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 160px;
+    transform: scale(2);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    transition: 0.2s;
+    position: relative;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+}
+
+.contactus {
+    position: relative;
+    bottom: 15px;
+}
+
+
+a:hover:after {
+    width: 100%;
+}
+
+.dropdown {
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 120%;
+    z-index: 999;
+    text-align: center;
+}
+
+.dropdown li {
+    padding: 10px 0px;
+    width: 126px;
+    display: none;
+
+}
+.underline:hover{
+    text-decoration: none;
+}
+
+.dropdown li:hover {
+    background-color: rgba(61, 61, 61, 0.8);
+}
+
+.navbar li:hover .dropdown li {
+    display: block;
+}
+
+i {
+    color: white;
+    margin-left: 1px
+}
+
+
+/* main start */
+.main-start {
+    margin: 0px 0px 30px 0px;
+    height: 550px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.text {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    transform: scale(4);
+    margin-top: 90px;
+}
+
+.loremtext {
+    width: 500px;
+    text-align: center;
+}
+
+.contact {
+    font-size: 1.2rem;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.number,.email {
+    color: #FEBD69;
+    transition: 0.2s;
+}
+
+.contact :hover {
+    transform: scale(1.1);
+}
+
+
+/* categories */
+.designs-text {
+    margin-top: 100px;
+    height: 60px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+.categories {
+    height: 400px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.categories-boxes {
+    height: 90%;
+    width: 28%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+}
+
+.categories-images {
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: -20px;
+    margin-top: 5px;
+}
+
+.categories-boxes h1 {
+    color: black;
+}
+
+.categories-boxes button {
+    font-size: 1.2rem;
+}
+
+
+/* content */
+.content {
+    margin-bottom: 0px;
+    height: 500px;
+    width: 100vw;
+    background-color: #12120E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    margin-left: 100px;
+}
+
+.content-text p {
+    font-family: "Merriweather", serif;
+    transform: scale(3);
+    margin-bottom: 30px;
+}
+
+/* content 2 */
+
+.content2 {
+    height: 500px;
+    background-color: #12120E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content2-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    margin-right: 100px;
+}
+
+.content2-image1{
+    background-image: url(images/project3-image.webp);
+    height: 480px;
+    width: 48.5vw;
+    margin-left: 10px;
+}
+
+.content2-text1{
+    margin-bottom: 20px;
+}
+.content2-text1 p{
+    font-family: "Merriweather", serif;
+    color: white;
+    font-size: 3rem;
+    text-align:center;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    background-color: #ffa32a;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: white;
+}
+
+.content-image1 {
+    background-image:url(images/services-image.webp);
+    height: 480px;
+    width: 48.5vw;
+    margin-right: 25px;
+    background-size: cover;
+    filter: brightness(90%);
+}
+
+
+
+.content-image3 {
+    background-image: url(images/project3-image.webp);
+    height: 480px;
+    width: 48.5vw;
+    margin-right: 25px;
+    background-size: cover;
+    filter: brightness(90%);
+}
+
+/* footer */
+footer {
+    background-size: cover;
+    height: 200px;
+    background-color: #3D3D3D;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.connect-with-us-logo {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.connect-with-us i {
+    cursor: pointer;
+    transform: scale(2);
+    padding: 3px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 0.2s
+}
+
+.connect-with-us-text {
+    width: 250px;
+    transform: scale(1.5);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.2s
+}
+
+.connect-with-us i:hover {
+    color: #ffa32a;
+    border: 1px solid #ffa32a;
+}
+
+/* download our app */
+.download-our-app-images {
+    display: flex;
+    justify-content: center;
+}
+
+.download-our-app-text {
+    text-align: center;
+    margin-bottom: 20px;
+    transform: scale(1.5);
+}
+
+.play-store {
+    background-image: url(images/playstore-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 120px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.app-store {
+    background-image: url(images/appstore-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 125px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+}
